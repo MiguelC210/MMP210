@@ -1,3 +1,6 @@
+/*
+this is the version 3 self portrait.
+*/
 function setup() {
 	createCanvas(800, 500);
 }
@@ -9,8 +12,8 @@ function draw() {
     var heady = 280;
     var headw = 320;
     
-    var lefteye = 350;
-    var righteye = 480;
+    var lefteye = mouseX;
+    var righteye = mouseY;
     var eyey = 260;
     var eyew = 100;
     var eyeh = 120;
@@ -23,7 +26,7 @@ function draw() {
     var nose1 = 461;
     var nose2 = 330;
     
-    var line1 = 255;
+    var line1 = frameCount;
     var line2 = 102;
     var line3 = 0;
     
