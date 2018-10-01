@@ -1,17 +1,25 @@
 /*
 this is the version 3 self portrait.
 */
+var r = 0;
+var b = 255;
+
 function setup() {
 	createCanvas(800, 500);
 }
 
 function draw() {
-	background("white");
+	background(r, 0, b);
+    r = map(mouseX, 0, 600, 0, 255);
+    b = map(mouseX, 0, 600, 255, 255);
     
+    
+    /* head shape */ 
     var head = 420;
     var heady = 280;
     var headw = 320;
     
+    /* shapes of the eyes */
     var lefteye = mouseX;
     var righteye = mouseY;
     var eyey = 260;
@@ -19,6 +27,7 @@ function draw() {
     var eyeh = 120;
     var smalleye = 40;
     
+    /* shape for the nose */
     var nosex = 420;
     var nosey = 300;
     var noseh = 400;
@@ -26,16 +35,19 @@ function draw() {
     var nose1 = 461;
     var nose2 = 330;
     
+    /* secondary line color */
     var line1 = frameCount;
     var line2 = 102;
     var line3 = 0;
     
+    /* mouth shapes */
     var mouth = 390;
     var bigmouth = 400;
     var bigmouth1 = 60;
     var smallmouth = 415;
     var smallmouth1 = 30;
     
+    /* hair shape */
     var hair = 650;
     var hairy = 250;
     var hairw = 400;
