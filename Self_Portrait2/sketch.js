@@ -20,8 +20,8 @@ function draw() {
     var headw = 320;
     
     /* shapes of the eyes */
-    var lefteye = mouseX;
-    var righteye = mouseY;
+    var lefteye = mouseY;
+    var righteye = mouseX;
     var eyey = 260;
     var eyew = 100;
     var eyeh = 120;
@@ -54,6 +54,12 @@ function draw() {
     var hairh = 50;
     var hair1 = 150;
     var hair2 = 200;
+    
+    //colors
+    var black = black;
+    var peachpuff = peachpuff;
+    var white = white;
+    var brown = brown;
 
 //face
 fill("peachpuff")
